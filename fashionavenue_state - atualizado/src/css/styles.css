@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/*css do topo*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 20vh;
+}
+.logo {
+width: 14%;
+
+}
+
+nav {
+  padding: 15px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav li {
+
+  margin-right: 40px ;
+}
+
+.divBusca{
+  display: flex;
+  align-items: center;
+}
+
+
+input {
+height: 3vh;
+  width: 50vh;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.603);
+}
+
+#btnBusca {
+  width: 10%;
+  margin-right: -80vh;
+
+}
+
+#txtBusca{
+  padding: 5px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .logo {
+    width: 100px; 
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .esconder-em-mobile {
+    display: none; /* Oculta a div em dispositivos móveis */
+  }
+}
+
+
+@media (max-width: 1600px) {
+
+  .divBusca{
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  input {
+    width: 30vh;
+  }
+  
+  #btnBusca {
+    
+    margin-right: -50vh;
+  
+  }
+  
+ 
+}
+
+
+/*carrossel css */
+
+.carrossel {
+  margin: 5px;
+  border-radius: 10px;
+}
+.botoes {
+
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  height: 15px;
+  cursor: pointer;
+}
+
+#passar_button{
+  width: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 5px;
+  border: 1px solid rgb(245, 245, 245);
+}
+
+.botao-menu{
+
+  text-decoration: none;
+  color: black;
+  padding: 8px 12px;
+}
+
+.botao-menu:hover{
+background-color: rgb(128, 58, 58);
+color: white;
+border-radius: 5px;
+}
+
+
+.carrossel{
+width: 100%;
+margin-top: 20px;
+
+}
+
+/* destaques */
+
+.card1 {
+  text-align: center; /* Alinha o conteúdo ao centro */
+}
+
+.card1 img {
+  width: 150px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.titulo_destaque{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#titulo_masc, 
+#titulo_feminino,
+#titulo_infantil,
+#titulo_calcados
+{
+  padding: 1vh;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 2px;
+  border-bottom: 10px solid #007bff;
+  width: 20%;
+  margin: 40px;
+  text-transform: uppercase; /*transforma as letras em maiúsculas */
+}
+
+#titulo_masc {
+  border-bottom: 10px solid #4c91dab4;
+}
+
+#titulo_feminino {
+  border-bottom: 10px solid #E6B8B7;
+}
+
+#titulo_infantil {
+  border-bottom: 10px solid #8d8dc2;
+}
+
+#titulo_calcados{
+  border-bottom: 10px solid #8b4513a8;
+}
+
+
+/* galeria */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  
+  width: 90%;
+}
+
+.roupas {
+ 
+  width: 90%; /* Definir a largura das imagens */
+  margin-bottom: 17px; /* Adicionar margem inferior para separar as linhas de imagens */
+}
+
+.roupas a {
+  text-decoration: none;
+}
+
+#preco{
+  margin-right: auto;
+  background-color: rgb(213, 202, 202);
+  width: 91%;
+ font-weight: bold;
+  color: #000000;
+}
+
+.descricao {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: -5px;
+}
+  
+
+.roupas img {
+  max-height: 100%;
+  max-width: 100%; /* Definir a largura máxima da imagem como 100% do contêiner */
+  height: auto;
+}
+
+#titulo_home{
+  padding: 5vh;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  text-align: center;
+  font-size: xx-large;
+  text-transform: uppercase; /*transforma as letras em maiúsculas */
+}
+
+.roupa{
+  flex: 0 0 calc(25% - 20px);
+  max-width: 500px;
+}
+
+.titulo-roupa {
+  font-size: 20px;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+.linha{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* rodapé */
+
+.rodape {
+background-color: whitesmoke;
+padding: 40px 0;
+text-align: center;
+font-family: "Playfair Display", serif;
+}
+
+.rodape h1{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.secao_icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+.botao_redessociais img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+
+}
+
+
+.botao_redessociais img:hover {
+  transform: scale(1.1);
+}
+
+.endereco {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.localizacao, .horario {
+  padding: 5px;
+}
+.copy{
+display: flex;
+justify-content: center;
+
+}
+
+.copy p{
+  margin: 20px;
+}
+
+
+/*formulario*/
+
+
+.container_form {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+  padding-bottom: 10%;
+  
+}
+
+.formulario {
+ padding: 5vh;
+  background-color: whitesmoke;
+  width: 400px;
+  height: 400px;
+  font-family: "Playfair Display", serif;
+  border: 1px solid rgb(128, 58, 58);
+  border-radius: 5px;
+  box-shadow: 4px 4px 25px 1px rgb(123, 117, 117);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button_login, .input_login{
+  width: 100%;
+}
+
+input, .input_login{
+  margin: 10px;
+  padding: 15px;
+}
+
+.button_login {
+  padding: 15px;
+  border-radius: 15px;
+  font-size: larger;
+  background-color: rgb(128, 58, 58);
+  color: whitesmoke;
+  margin-top: 3vh;
+  border: 0;
+  height: 60px;
+}
+
+.link_cadastro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: rgb(128, 58, 58);
+
+}
+.link_cadastro button{
+border: 0;
+color: blue;
+}
+.sobre_site {
+display: flex;
+padding: 30px;
+font-family: 'Montserrat', sans-serif;
+}
+
+.sobre_site h1{
+border-bottom: 1px solid #007bff;
+}
+
+.div_sobre {
+  width: 50%;
+  padding: 30px;
+}
+
+.img_sobre {
+  border: 1px solid black;
+  width: 50%;
+  border-radius: 50px 10px;
+
+}
+
+.img_sobre img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px 10px;
+}
